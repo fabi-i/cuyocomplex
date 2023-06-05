@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'/>
+        <style>
+
+            *{
+                font-family: 'Open Sans';
+            }
+
+            .ui-menubar{
+                padding-left: 1.3em;
+                background-color: #d9d9d9;
+                border-color: #d9d9d9;
+                border-radius: 0;
+            }
+
+            .ui-menubar :hover{
+                background-color: #d9d9d9; 
+            }
+
+            .ui-menuitem{
+                padding: 0px;
+                margin: 0px;
+                border-radius: 0px;
+                /*margin-top: 3em;*/
+            }
+
+            .ui-menuitem-link{
+
+            }
+
+            .ui-menuitem-text{
+
+            }
+
+            .ui-menubar,.ui-menu-child,.ui-menu,.ui-corner-all,.ui-menu-parent
+            ,.ui-menuitem-link,.ui-menu-link,.ui-widget,.ui-submenu-link, 
+            .ui-menuitem-text,.ui-icon,.ui-icon-triangule-1-s,.ui-widget-content,
+            .ui-menu-list,.ui-helper-clearfix,.ui-shadow,.ui-submenu{
+                background: #d9d9d9 !important;
+                border-color: #d9d9d9 !important;
+            }
+
+            .ge-icon {
+                background: url(resources/cuyo-logo.png) no-repeat !important;
+                height: 25px;
+                width: 25px;
+            }
+            /*{
+                text-align: center;
+            }
+            .center{
+                float: none;
+                margin: 0 auto;
+
+            }
+
+
+            div.login{
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 35%;
+                width: 25%;
+                padding: 25px;
+                margin: auto;
+                background: white;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            .logo{
+                width: 150px;
+            }
+            .form-control:focus{
+                border-color:#007738;
+            }
+            .btn-success{
+                text-shadow: none;
+            }*/
+
+
+        </style>
+    </h:head>
+
+    <h:body>
+
+        <h:form>
+            <p:growl id="messages"/>
+
+            <p:menubar>
+                <p:menuitem icon="resources/cuyo-logo.png" url="https://www.pinterest.com/pin/167407311136529464/"/>
+                <p:submenu label="Unidad de aprendizaje" style="margin-left: 1.5em" >
+                    <p:menuitem value="Project" url="#" />
+                    <p:menuitem value="Other" url="#" />
+                    <p:menuitem value="Open" url="#" />
+                    <p:menuitem value="Quit" url="#" />
+                </p:submenu>
+
+                <p:submenu label="Profesor" style="margin-left: 1.5em">
+                    <p:menuitem value="Undo" url="#"/>
+                    <p:menuitem value="Redo" url="#"/>
+                </p:submenu>
+            </p:menubar>
+
+        </h:form>
+
+        <!-- <div class = "row">
+            <h:form>
+                <p:messages id="messages" showDetail="true" closable="true">
+                </p:messages>
+                <div class="login">
+                    <div class="panel-header">
+                        <p:graphicImage url="resources/uabcl.png" class="logo" />
+                    </div>
+                    <div class="panel-body">
+                        <div class=" form-group">
+                            <p:inputText class ="form-control" placeholder ="Apellido:" autocomplete="false" value ="#{loginUI.profesor.apellidoP}" />
+                        </div>
+                        <div class="form-group">
+                            <p:password class ="form-control" placeholder="Nombre: " value="#{loginUI.profesor.nombreProfesor}" />
+                        </div>
+                        <p:commandButton update="messages" class = "btn btn-success" value ="Iniciar sesion" actionListener ="#{loginUI.login()}" />
+                    </div>
+                </div>
+            </h:form>
+        </div> -->
+    </h:body>
+</html>

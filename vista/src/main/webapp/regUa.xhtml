@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Registrar Unidad de aprendizaje</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/menuBar.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'/>
+    </h:head>
+    <style>
+        * {
+            font-family: 'Open Sans';
+        }
+        #formulario_o {
+          
+        }
+        div.form{
+            height: 40%;
+            width: 60%;
+            padding: 25px;
+            margin: auto;
+            background: white;
+            /*border-radius: 1px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 2px 0 rgba(0, 0, 0, 0.19);*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .ui-inputfield {
+            margin: 0;
+            outline: medium none;
+            padding: 8px;
+            font-weight: normal;
+        }
+        .ui-inputgroup {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .ui-inputfield {
+            margin: 0;
+            outline: medium none;
+            padding: 8px;
+            font-weight: normal;
+        }
+        .ui-button.ui-button-secondary {
+            background: #607d8b;
+            color: #ffffff;
+            border: 2px solid #607d8b;
+        }
+    </style>
+
+    <h:body>
+       <!--Navegador-->
+        <h:form>
+            <p:menubar>
+                <p:submenu label="Unidad de aprendizaje" style="margin-left: 1.5em" >
+                    <p:menuitem value="Registro" url="#" />
+                </p:submenu>
+
+                <p:submenu label="Profesor" style="margin-left: 1.5em">
+                    <p:menuitem value="Registro" url="#"/>
+                    <p:menuitem value="Consulta" url="#"/>
+                    <p:menuitem value="Modificación y eliminación" url="#"/>
+                </p:submenu>
+            </p:menubar>
+        </h:form>
+        
+        <div class="form"> 
+            <h4 style="margin: 2px;">Registro</h4>
+            <h1 style='margin-top: 10px; margin-bottom: 20px'>Unidades de aprendizaje</h1>
+            <div id="formulario_o">
+                <div>
+                    <div>
+                        <p:outputLabel value="Nombre de la unidad de aprendizaje"/>
+                        <p:inputText style="width: 90%;" placeholder="Unidad de aprendizaje"/>
+                    </div>
+                </div>
+
+                <div class="ui-inputgroup">
+                    <div class="field col-12 md:col-4">
+                        <label>Horas de clase</label>
+                        <p:inputNumber value="" minValue="0" decimalPlaces="0" placeholder="Clase"/>
+                    </div>
+                    <div class="field col-12 md:col-4">
+                        <label>Horas de taller</label>
+                        <p:inputNumber value="" minValue="0" decimalPlaces="0" placeholder="Taller"/>
+                    </div>
+                    <div class="field col-12 md:col-4">
+                        <label>Horas de laboratorio</label>
+                        <p:inputNumber value="" minValue="0" decimalPlaces="0" placeholder="Laboratorio"/>
+                    </div>
+                </div>
+                <div style='margin-top: 10px; display: flex ; flex-direction: row-reverse;'>
+                    <p:button value="Registrar" style=" background: #607d8b; color: #313131" styleClass="ui-button-raised ui-button-secondary" />
+                </div>
+                
+            </div>
+
+        </div>
+    </h:body>
+</html>
+

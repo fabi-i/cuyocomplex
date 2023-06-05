@@ -1,0 +1,42 @@
+* {
+            font-family: 'Open Sans';
+        }
+        #formulario_o {
+          
+        }
+        div.form{
+            height: 40%;
+            width: 60%;
+            padding: 25px;
+            margin: auto;
+            background: white;
+            /*border-radius: 1px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 2px 0 rgba(0, 0, 0, 0.19);*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .ui-inputfield {
+            margin: 0;
+            outline: medium none;
+            padding: 8px;
+            font-weight: normal;
+        }
+        .ui-inputgroup {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .ui-inputfield {
+            margin: 0;
+            outline: medium none;
+            padding: 8px;
+            font-weight: normal;
+        }
+        .ui-button.ui-button-secondary {
+            background: #607d8b;
+            color: #ffffff;
+            border: 2px solid #607d8b;
+        }

@@ -1,0 +1,74 @@
+*{
+    font-family: 'Open Sans';
+}
+
+.ui-menubar{
+    padding-left: 1.3em;
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+    border-radius: 0;
+}
+
+.ui-menubar :hover{
+    background-color: #d9d9d9; 
+}
+
+.ui-menuitem{
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    /*margin-top: 3em;*/
+}
+
+.ui-menuitem-link{
+
+}
+.ui-menuitem-text{
+
+}
+
+.ui-menubar,.ui-menu-child,.ui-menu,.ui-corner-all,.ui-menu-parent
+,.ui-menuitem-link,.ui-menu-link,.ui-widget,.ui-submenu-link, 
+.ui-menuitem-text,.ui-icon,.ui-icon-triangule-1-s,.ui-widget-content,
+.ui-menu-list,.ui-helper-clearfix,.ui-shadow,.ui-submenu{
+    background: #f5f5f5 !important;
+    border-color: #d9d9d9 !important;
+}
+
+.ge-icon {
+    background: url(resources/user.png) no-repeat !important;
+    height: 25px;
+    width: 25px;
+}
+.ui-state-hover {
+    -moz-box-shadow: 0 0 8px #d9d9d9,inset 0 1px 0 #fff;
+}
+
+.ui-state-hover a,.ui-state-hover a:hover {
+    color: #d9d9d9;
+    text-decoration: none
+}
+
+/*FABI*/
+
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active {
+    border: 1px solid #7096ab;
+    background: #d9d9d9 url("/vista/javax.faces.resource/images/ui-bg_inset-hard_65_85b2cb_1x100.png.xhtml?ln=primefaces-aristo") 50% 50% repeat-x;
+    background: #d9d9d9 linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0.4));
+    background: #d9d9d9 -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0)),to(rgba(255,255,255,0.4)));
+    background: #d9d9d9 -moz-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0.4));
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+    color: #1c4257;
+}
+
+
+.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+.aui .ui-spinner .ui-inputfield.ui-state-focus {
+    -moz-box-shadow: 0 0 5px #d9d9d9,inset 0 2px 2px #d9d9d9;
+    -webkit-box-shadow: 0 0 5px #d9d9d9,inset 0 2px 2px #d9d9d9;
+    box-shadow: 0 0 5px #d9d9d9,inset 0 2px 2px #d9d9d9;
+}

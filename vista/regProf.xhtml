@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Registrar Profesor</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'/>
+    </h:head>
+    <style>
+        * {
+            font-family: 'Open Sans';
+        }
+        #formulario_o {
+
+        }
+        div.form{
+            height: 50%;
+            width: 60%;
+            padding: 25px;
+            margin: auto;
+            background: white;
+            border-radius: 1px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .ui-inputfield {
+            margin: 0;
+            outline: medium none;
+            padding: 8px;
+            font-weight: normal;
+        }
+        .ui-inputgroup {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .ui-inputfield {
+            margin: 0;
+            outline: medium none;
+            padding: 8px;
+            font-weight: normal;
+        }
+        .ui-button.ui-button-secondary {
+            background: #607d8b;
+            color: #ffffff;
+            border: 2px solid #607d8b;
+        }
+    </style>
+
+    <h:body>      
+        <div class="form"> 
+            <h4 style="margin: 2px;">Registro</h4>
+            <h1 style='margin-top: 10px; margin-bottom: 20px'>Profesores</h1>
+            <div id="formulario_o">
+
+                <div class="ui-inputgroup">
+                    <div>
+                        <label>Nombre(s)</label>
+                        <p:inputText placeholder="Nombre"/>
+                    </div>
+                    <div>
+                        <label>Apellido paterno</label>
+                        <p:inputText placeholder="Apellido paterno"/>
+                    </div>
+                    <div>
+                        <label>Apellido materno</label>
+                        <p:inputText  placeholder="Apellido materno"/>
+                    </div>
+                </div>
+                <div style='margin-top: 15px'>
+                    <p:outputLabel style='font-size: 16px' value="RFC"/> <br></br>
+                    <p:inputText style="width: 40%;" placeholder="RFC"/>
+                </div>
+
+                <div style='margin-top: 15px'>
+                    <p:outputLabel style='font-size: 16px' value="Unidad de aprendizaje"/> <br></br>
+                    <p:inputText style="width: 40%;" placeholder="Unidad a impartir"/>
+                </div>
+<!--
+                <h:form>
+                    <p:selectManyMenu id="advanced" value="#{selectManyView.selectedCountries}"
+                                      converter="#{countryConverter}"
+                                      var="c" filter="true" filterMatchMode="contains" showCheckbox="true" styleClass="manymenu-advanced">
+                        <f:selectItems value="#{selectManyView.countries}" var="country" itemLabel="#{country.name}"
+                                       itemValue="#{country}"/>
+
+                        <p:column>
+                            <span class="flag flag-#{c.code}" style="width: 30px; height: 20px"/>
+                        </p:column>
+
+                        <p:column>
+                            <h:outputText value="#{c.name}"/>
+                        </p:column>
+                    </p:selectManyMenu>
+                </h:form>
+-->
+
+                <div style='display: flex ; flex-direction: row-reverse'>
+                    <p:button value="Registrar" styleClass="ui-button-raised ui-button-secondary"/>
+                </div>
+
+            </div>
+
+        </div>
+    </h:body>
+</html>
+
